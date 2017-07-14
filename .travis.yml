@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: SWIFT_SNAPSHOT=$SWIFT_4_DEV_SNAPSHOT
+    - os: osx
+      osx_image: xcode8.3
+      sudo: required
+      env: SWIFT_SNAPSHOT=$SWIFT_4_DEV_SNAPSHOT
+
+script:
+  - echo STAR
+  - echo $SWIFT_SNAPSHOT
+  - echo END
