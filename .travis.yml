@@ -11,6 +11,6 @@ matrix:
       env: SWIFT_SNAPSHOT=$SWIFT_4_DEV_SNAPSHOT
 
 script:
-  - echo STAR
+  - echo START
   - echo $SWIFT_SNAPSHOT
   - echo END
